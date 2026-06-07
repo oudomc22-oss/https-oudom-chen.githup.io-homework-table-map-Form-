@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset{
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        input, select{
+            margin-bottom: 20px;
+        }
+
+        .btn-group{
+            text-align: center; /* Center buttons */
+            margin-top: 20px;
+        }
+
+        .btn-group button{
+            width: 120px;
+            padding: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .submit-btn{
+            background-color: darkgreen;
+        }
+
+        .reset-btn{
+            background-color: red;
+        }
+    </style>
+     
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend style="color:blue;font-size:20px;font-weight:bold;">
+               ១ ពត៍មានផ្ទាល់ខ្លួន
+            </legend>
+            <label for="full-name">ឈ្មោះពេញ :</label><br>
+            <input type="text" id="full-name" name="ឈ្មោះពេញ" placeholder="បញ្ចូលឈ្មោះ" required><br>
+            <label for="date-of-birth">ថ្ងៃ ខែ ឆ្នាំកំណើត :</label><br>
+            <input type="date" id="date-of-birth" name="ថ្ងៃ ខែ ឆ្នាំកំណើត" placeholder="mm/dd/yy" required><br>
+            <label for="gender">ភេទ​​​ :</label><br>
+            <input type="radio" name="gender"id="">ប្រុស
+            <input type="radio" name="gender"id="">ស្រី<br>
+            <label for="address">ខេត្ត/រាជធានីកំណើត :</label><br>
+            <select name="address" id="address">
+                <option value="">---ជ្រើសរើសខេត្ត/រាជធានី​​---</option>
+                <option value="phnom-penh">ភ្នំពេញ</option>
+                <option value="kandal">កណ្តាល</option>
+                <option value="kampong-chhnang">កំពង់ឆ្នាំង</option>
+                <option value="kampong-speu">កំពង់ស្ពឺ</option>
+                <option value="kampong-thom">កំពង់ធំ</option>
+                <option value="kampot">កំពត</option>
+                <option value="kandal">កណ្តាល</option>
+                <option value="koh-kong">កោះកុង</option>
+                <option value="kratie">ក្រចេះ</option>
+                <option value="mondulkiri">មណ្ឌលគិរី</option>
+                <option value="phnom-penh">ភ្នំពេញ</option>
+                <option value="preah-vihear">ព្រះវិហារ</option>
+                <option value="prey-veng">ព្រៃវែង</option>
+                <option value="pursat">ពោធិ៍សាត់</option>
+                <option value="ratanakiri">រតនគិរី</option>
+                <option value="siem-reap">សៀមរាប</option>
+                <option value="sihanoukville">ព្រះសីហនុ</option>
+                <option value="stung-treng">ស្ទឹងត្រែង</option>
+                <option value="svay-rieng">ស្វាយរៀង</option>
+                <option value="takeo">តាកែវ</option>
+                <option value="oddar-meanchey">ឧត្តរមានជ័យ</option>
+                <option value="battambang">បាត់ដំបង</option>
+                <option value="preah-sihanouk">ព្រះសីហនុ</option>
+                <option value="kampong-cham">កំពង់ចាម</option>
+                <option value="Bonteay meanchey">បន្ទាយមានជ័យ</option>
+                <select><br>
+        </fieldset>
+    </form>
+     <form>
+        <fieldset>
+            <legend style="color:blue;font-size:20px;font-weight:bold;">
+             ២  ពត៌មានការសិក្សា
+            </legend>
+            <label for="year">ឆ្នាំសិក្សា :</label><br>
+            <select name="year" id="year">
+                <option value="">ឆ្នាំទី១</option>
+                <option value="">ឆ្នាំទី២</option>
+                <option value="">ឆ្នាំទី៣</option>
+                <option value="">ឆ្នាំទី៤</option>
+            </select><br><br>
+                <label for="major">ជំនាញ​ដែលចូលចិត្ត :</label><br>
+                <input type="checkbox" name="major" id="">Web Dev<br>
+                <input type="checkbox" name="major" id="">UI/UX Design<br>
+                <input type="checkbox" name="major" id="">Network<br>
+        </fieldset>
+     </form>
+        <fieldset>
+            <legend style="color:blue;font-size:20px;font-weight:bold;">
+             ៣ គណនីសុវត្ថិភាព
+            </legend>
+            <label for="email">អ៊ីម៉ែល :</label><br>
+            <input type="email" id="email" name="អ៊ីម៉ែល" placeholder="បញ្ចូលអ៊ីម៉ែល" required><br>
+            <label for="password">លេខកូដសម្ងាត់ :</label><br>
+            <input type="password" id="password" name="លេខកូដសម្ងាត់" placeholder="បញ្ចូលលេខកូដ" required><br>
+        </fieldset>
+        <div class="btn-group">
+        <button type="submit"​​ style=" background-color: darkgreen;color: white; width: 100px;"> បញ្ជូន Submit </button>
+     <button type="reset"​​  style=" background-color: red;color: white; width: 100px;"> សម្អាត Clear </button>
+     </div>
+     </form>
+     
+</body>
+</html>
